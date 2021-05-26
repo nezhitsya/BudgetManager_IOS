@@ -1,5 +1,9 @@
-from django.shortcuts import HttpResponse
+from .models import Account
+from rest_fraomework import viewsets
+from rest_framework import permissions
+from .serializer import AccountSerializer
 
-# Create your views here.
-def index(request) :
-    return HttpResponse("API View")
+class AccountViewSet(viewsets.ModelViewSet) :
+    queryset = Account.objects.all()
+    serializer_class = AccountSerializer
+    permission_classes = [permissions.IsAuthenticated]
