@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B0900522660768300930397 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0900512660768300930397 /* Account.swift */; };
+		0B090054266077BD00930397 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B090053266077BD00930397 /* ContentView.swift */; };
 		0B82C923265F632100589CAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C922265F632100589CAA /* AppDelegate.swift */; };
 		0B82C925265F632100589CAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C924265F632100589CAA /* SceneDelegate.swift */; };
-		0B82C927265F632100589CAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C926265F632100589CAA /* ViewController.swift */; };
 		0B82C92A265F632100589CAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C928265F632100589CAA /* Main.storyboard */; };
 		0B82C92D265F632100589CAA /* Budget_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B82C92B265F632100589CAA /* Budget_Manager.xcdatamodeld */; };
 		0B82C92F265F632200589CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B82C92E265F632200589CAA /* Assets.xcassets */; };
@@ -17,10 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B0900512660768300930397 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		0B090053266077BD00930397 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0B82C91F265F632100589CAA /* Budget_Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Budget_Manager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B82C922265F632100589CAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B82C924265F632100589CAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0B82C926265F632100589CAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0B82C929265F632100589CAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0B82C92C265F632100589CAA /* Budget_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Budget_Manager.xcdatamodel; sourceTree = "<group>"; };
 		0B82C92E265F632200589CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,12 +62,13 @@
 			children = (
 				0B82C922265F632100589CAA /* AppDelegate.swift */,
 				0B82C924265F632100589CAA /* SceneDelegate.swift */,
-				0B82C926265F632100589CAA /* ViewController.swift */,
 				0B82C928265F632100589CAA /* Main.storyboard */,
 				0B82C92E265F632200589CAA /* Assets.xcassets */,
 				0B82C930265F632200589CAA /* LaunchScreen.storyboard */,
 				0B82C933265F632200589CAA /* Info.plist */,
 				0B82C92B265F632100589CAA /* Budget_Manager.xcdatamodeld */,
+				0B0900512660768300930397 /* Account.swift */,
+				0B090053266077BD00930397 /* ContentView.swift */,
 			);
 			path = Budget_Manager;
 			sourceTree = "<group>";
@@ -140,8 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0900522660768300930397 /* Account.swift in Sources */,
 				0B82C92D265F632100589CAA /* Budget_Manager.xcdatamodeld in Sources */,
-				0B82C927265F632100589CAA /* ViewController.swift in Sources */,
+				0B090054266077BD00930397 /* ContentView.swift in Sources */,
 				0B82C923265F632100589CAA /* AppDelegate.swift in Sources */,
 				0B82C925265F632100589CAA /* SceneDelegate.swift in Sources */,
 			);
