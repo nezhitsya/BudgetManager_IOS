@@ -14,6 +14,8 @@
 		0B09006B2660822400930397 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B09006A2660822400930397 /* Persistence.swift */; };
 		0B09006E2660822400930397 /* Budget_Manager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0B09006C2660822400930397 /* Budget_Manager.xcdatamodeld */; };
 		0B0900762660827000930397 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0900752660827000930397 /* Account.swift */; };
+		0B0900782660838000930397 /* AccountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0900772660838000930397 /* AccountDetailView.swift */; };
+		0B09007A2660860B00930397 /* EditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0900792660860B00930397 /* EditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		0B09006D2660822400930397 /* Budget_Manager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Budget_Manager.xcdatamodel; sourceTree = "<group>"; };
 		0B09006F2660822400930397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B0900752660827000930397 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		0B0900772660838000930397 /* AccountDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailView.swift; sourceTree = "<group>"; };
+		0B0900792660860B00930397 /* EditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				0B09006C2660822400930397 /* Budget_Manager.xcdatamodeld */,
 				0B0900672660822400930397 /* Preview Content */,
 				0B0900752660827000930397 /* Account.swift */,
+				0B0900772660838000930397 /* AccountDetailView.swift */,
+				0B0900792660860B00930397 /* EditView.swift */,
 			);
 			path = Budget_Manager;
 			sourceTree = "<group>";
@@ -150,6 +156,8 @@
 				0B0900762660827000930397 /* Account.swift in Sources */,
 				0B09006E2660822400930397 /* Budget_Manager.xcdatamodeld in Sources */,
 				0B09006B2660822400930397 /* Persistence.swift in Sources */,
+				0B0900782660838000930397 /* AccountDetailView.swift in Sources */,
+				0B09007A2660860B00930397 /* EditView.swift in Sources */,
 				0B0900642660822300930397 /* ContentView.swift in Sources */,
 				0B0900622660822300930397 /* Budget_ManagerApp.swift in Sources */,
 			);

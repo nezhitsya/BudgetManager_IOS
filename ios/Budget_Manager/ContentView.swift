@@ -37,9 +37,11 @@ struct ContentView: View {
     }
     
     func loadAccount() {
+        
         guard let url = URL(string: "http://127.0.0.1:8000/api/account") else {
         return
         }
+        
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -56,8 +58,11 @@ struct ContentView: View {
 }
 
 struct AccountAddview: View {
+    
     @Environment(\.presentationMode) var presentationMode
+    
     var function: () -> Void
+    
     @State var name: String = ""
     @State var category: String = ""
     @State var description: String = ""
