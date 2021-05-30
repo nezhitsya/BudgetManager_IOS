@@ -47,13 +47,14 @@ struct AccountDetailView: View {
     
     func deleteAccount() {
         guard let url = URL(string: "http://127.0.0.1:8000/api/account/\(self.account.id)/") else {
+            print("api is down")
             return
         }
         
         var request = URLRequest(url: url)
         request.httpMethod = "DELETE"
         request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.addValue("Basic ", forHTTPHeaderField: "Authorization")
+        request.addValue("Basic 7fc7fa9170e13197ce5f9ded49dd12dd9e538eb6=", forHTTPHeaderField: "Authorization")
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data {

@@ -45,12 +45,14 @@ struct EditView: View {
     
     func updateAccount() {
         guard let url = URL(string: "http://127.0.0.1:8000/api/account/\(self.account.id)/") else {
+            print("api is invalid")
             fatalError()
         }
         
         let accountData = self.account
         
         guard let encoded = try? JSONEncoder().encode(accountData) else {
+            print("Failed to encode order")
             return
         }
         
@@ -58,7 +60,7 @@ struct EditView: View {
         request.httpMethod = "PUT"
         request.addValue("application/JSON", forHTTPHeaderField: "Accept")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("Basic ", forHTTPHeaderField: "Authorization")
+        request.addValue("Basic 7fc7fa9170e13197ce5f9ded49dd12dd9e538eb6=", forHTTPHeaderField: "Authorization")
         request.httpBody = encoded
         
         URLSession.shared.dataTask(with: request) { data, response, error in
