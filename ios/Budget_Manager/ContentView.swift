@@ -40,7 +40,7 @@ struct ContentView: View {
     
     func loadAccount() {
         
-        guard let url = URL(string: "http://127.0.0.1:8000/api/account") else {
+        guard let url = URL(string: "http://127.0.0.1:8000/api/account/") else {
             print("api is down")
             return
         }
@@ -48,7 +48,7 @@ struct ContentView: View {
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.addValue("Basic 7fc7fa9170e13197ce5f9ded49dd12dd9e538eb6=", forHTTPHeaderField: "Authorization")
+        request.addValue("Basic bGR5Olp6b3JhZW5n", forHTTPHeaderField: "Authorization")
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data {
@@ -59,7 +59,6 @@ struct ContentView: View {
                     return
                 }
             }
-            
         }.resume()
     }
 }
@@ -118,7 +117,7 @@ struct AccountAddview: View {
         request.httpMethod = "POST"
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("Basic 7fc7fa9170e13197ce5f9ded49dd12dd9e538eb6=", forHTTPHeaderField: "Authorization")
+        request.addValue("Basic bGR5Olp6b3JhZW5n", forHTTPHeaderField: "Authorization")
         request.httpBody = encoded
         
         URLSession.shared.dataTask(with: request) { data, response, error in

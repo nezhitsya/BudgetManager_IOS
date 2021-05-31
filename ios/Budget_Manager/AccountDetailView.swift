@@ -54,7 +54,7 @@ struct AccountDetailView: View {
         var request = URLRequest(url: url)
         request.httpMethod = "DELETE"
         request.addValue("application/json", forHTTPHeaderField: "Accept")
-        request.addValue("Basic 7fc7fa9170e13197ce5f9ded49dd12dd9e538eb6=", forHTTPHeaderField: "Authorization")
+        request.addValue("Basic bGR5Olp6b3JhZW5n", forHTTPHeaderField: "Authorization")
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if let data = data {

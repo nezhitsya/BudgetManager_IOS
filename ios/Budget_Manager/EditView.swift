@@ -60,7 +60,7 @@ struct EditView: View {
         request.httpMethod = "PUT"
         request.addValue("application/JSON", forHTTPHeaderField: "Accept")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("Basic 7fc7fa9170e13197ce5f9ded49dd12dd9e538eb6=", forHTTPHeaderField: "Authorization")
+        request.addValue("Basic bGR5Olp6b3JhZW5n", forHTTPHeaderField: "Authorization")
         request.httpBody = encoded
         
         URLSession.shared.dataTask(with: request) { data, response, error in
