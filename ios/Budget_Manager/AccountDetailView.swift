@@ -70,6 +70,6 @@ struct AccountDetailView: View {
 
 struct AccountDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountDetailView(account: Account(id: 0, name: "Stock", category: "Accet", description: "Blah", wealth_type: "Wealth Building", balance: 0, created_at: ""))
+        AccountDetailView(account: Account(id: 0, name: "Stocks", category: "Asset", description: "Stock", wealth_type: "Wealth Building", balance: 10000, created_at: ""))
     }
 }
